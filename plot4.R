@@ -5,7 +5,8 @@ source('readPowerData.R')
 png(
   filename = 'plot4.png',
   width = 480,
-  height = 480
+  height = 480,
+  bg = 'transparent' # Make the background transparent, instead of white
 )
 
 # This PNG will contain two columns, of two plots each

@@ -5,7 +5,8 @@ source('readPowerData.R')
 png(
   filename = 'plot3.png',
   width = 480,
-  height = 480
+  height = 480,
+  bg = 'transparent' # Make the background transparent, instead of white
 )
 
 # The third plot will contain three lines of different colours, though the

@@ -5,7 +5,8 @@ source('readPowerData.R')
 png(
   filename = 'plot1.png',
   width = 480,
-  height = 480
+  height = 480,
+  bg = 'transparent' # Make the background transparent, instead of white
 )
 
 # The first plot is just a standard histogram with the default breaks,
@@ -14,6 +15,6 @@ hist(
   data$power.active,
   main = 'Global Active Power', # Plot title
   xlab = 'Global Active Power (kilowatts)', #x-axis label
-  col = 'red' # Fill colour of the histogram bars
+  col = 'red', # Fill colour of the histogram bars
 )
 dev.off() # Save and close the new PNG file, which is now complete

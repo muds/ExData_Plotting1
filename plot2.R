@@ -5,7 +5,8 @@ source('readPowerData.R')
 png(
   filename = 'plot2.png',
   width = 480,
-  height = 480
+  height = 480,
+  bg = 'transparent' # Make the background transparent, instead of white
 )
 
 # The second plot displays active power as a function of time
