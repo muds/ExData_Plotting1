@@ -8,6 +8,9 @@ png(
   height = 480
 )
 
+# The third plot will contain three lines of different colours, though the
+# initial call to plot() here uses the default ('black') for the first of
+# the three lines
 plot(
   data$datetime, # x values, independent variable
   data$sub1, # First set of y values; more added below after call to plot()
